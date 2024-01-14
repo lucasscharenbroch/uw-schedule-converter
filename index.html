@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>UW Schedule Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <h1>UW Schedule Converter</h1>
+    <h4>Convert UW Course Schedules to .ical</h4>
+
+    <section class="flex-space-between">
+        <article>
+            <ol>
+                <li>
+                    Navigate to <a href="https://my.wisc.edu" target="_blank">my.wisc.edu</a> &gt; Course Schedule &gt; Print
+                </li>
+                <li>
+                    Copy the text from the bottom of the schedule to the bottom of the page
+                </li>
+                <li>
+                    Paste it into the box below
+                </li>
+                <li>
+                    <button onclick="do_conversion()">Click this button to generate the .ical</button>
+                </li>
+                <li>
+                    Copy or <button onclick="download_ical()">Download</button> the output.
+                </li>
+            </ol>
+        </article>
+        <aside>
+            <div>
+                <div class="flex-space-evenly">
+                    <div class="flex-col pad2">
+                        <label for="title-input">Title:</label>
+                        <input type="text" id="title-input" />
+                        <label for="description-input">Description:</label>
+                        <input type="text" id="description-input" />
+                    </div>
+                    <div class="flex-col pad2">
+                        <label for="term-start-input">Term Start:</label>
+                        <input type="date" id="term-start-input" />
+                        <label for="term-end-input">Term End:</label>
+                        <input type="date" id="term-end-input"/>
+                    </div>
+                </div>
+            </div>
+            <label for="include-location-input">Include Location?</label>
+            <input type="checkbox" id="include-location-input" />
+        </aside>
+    </section>
+
+    <main class="flex-space-evenly">
+        <textarea id="text-input">
+        </textarea>
+
+        <textarea id="text-output">
+        </textarea>
+    </main>
+</body>
+
+<script src="convert.js"></script>
+<script src="main.js"></script>
