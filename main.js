@@ -11,7 +11,7 @@ const include_location_elem = document.querySelector("#include-location-input");
 /* Misc. Runtime Helpers */
 
 function set_input_elem_default_text() {
-    fetch("/demo-input.txt")
+    fetch("demo-input.txt")
         .then(response => response.text())
         .then(text => text_input_elem.value = text);
 }
