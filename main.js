@@ -19,8 +19,8 @@ function set_input_elem_default_text() {
 function populate_default_fields() {
     title_elem.value = "${subject} ${number} (${event_type} ${event_number})";
     description_elem.value = "${course_title}";
-    term_start_elem.value = "2024-01-23";
-    term_end_elem.value = "2024-05-03";
+    term_start_elem.value = "2024-09-04";
+    term_end_elem.value = "2024-12-11";
     include_location_elem.checked = true;
     text_output_elem.value = "";
     set_input_elem_default_text();
