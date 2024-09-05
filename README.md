@@ -1,3 +1,9 @@
+***UW's Scheduling App has gotten a much-needed update, rendering the parser for this project useless.***
+
+***Use Andrew's [(much nicer) converter](https://github.com/AndrewDTR/uw-cal-generator/) instead.***
+
+---
+
 # UW Schedule Converter
 
 A minimalist webpage for converting UW schedules (in text form) to .ical files.
